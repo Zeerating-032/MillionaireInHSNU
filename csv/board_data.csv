@@ -1,0 +1,17 @@
+Left_up_pos,Step_on_pos,Image_path,Activity_type,Intro_word,Action
+"(480, 465)","(560, 526)",Rhombic,Chance,以下有數格事件格式舉例,REWARD>>0_Score_10
+"(628, 446)","(676, 476)",Cylindrical,Fate,當前角色前進兩步,MOVE>>0_2
+"(712, 365)","(792, 426)",Rhombic,Story,進入故事,OPEN>>故事標題_./script/filename.txt
+"(860, 346)","(908, 376)",Cylindrical,Fate,暫停當前角色一回合,FREEZE>>0_1
+"(945, 265)","(1025, 326)",Rhombic,Reward,當前角色加10分，另一角色加5分,REWARD>>0_Score_10; REWARD>>1_Score_5
+"(860, 246)","(908, 276)",Cylindrical,Story,說說自己的志向,OPEN>>安閒自適_./script/TalkYourself.txt
+"(744, 196)","(792, 226)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(596, 115)","(676, 176)",Rhombic,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(512, 96)","(560, 126)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(363, 115)","(443, 176)",Rhombic,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(279, 196)","(327, 226)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(163, 246)","(211, 276)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(47, 296)","(95, 326)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(131, 315)","(211, 376)",Rhombic,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(279, 396)","(327, 426)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0
+"(395, 446)","(443, 476)",Cylindrical,Reward,這裡沒有東西,REWARD>>0_Score_0

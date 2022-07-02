@@ -1,0 +1,45 @@
+BKG
+	Bkg1
+	Bkg2
+--BKG
+
+FIGURE
+	A: TestFigureA
+	B: TestFigureB
+--FIGURE
+
+$bkg.add_pic("Bkg1")
+$A.add_pic("Status1")
+$A.appear_at((150, 200))
+A:Hi.
+A:I would like to tell you a story.
+:Okay. He isn't a bad guy, I thinks.
+A:Once upon a time, there's a poor person living with his young daughter.
+A:The man needed some money to go to the capital to take a exam, once he got good grade, he would be able to escape from such a bad life.
+:Sounds great. But the exam is not easy, right?
+A:Yes. The exam was only hold once for three years. Those who want to become a government official must seize this opportunity.
+A:So, he sold his daughter to a rich widow, from who he had borrow money, as maid and her son's wife in the future.
+$B.add_pic("Status1")
+$B.appear_at((800, 200))
+:She must look like a bad woman. How bad the father is!
+A:The man memorized the address of the widow's house, in order to find his daughter in some day.
+A:The young daughter also believed that her father would turn back someday, and she could stand such a little hardship.
+A:The father left. A Few years later, the widow family moved to another town far away.
+:Oh no! What happen after that?
+A:Want to know what happened, come here tomorrow. Bye bye!
+$A.swift((-200, 200))
+:What...?
+$B.disappear()
+:Allright.
+
+%RouteChoose1 Chooser=Host%
+Opt1 >> part1
+Opt2 >> part2
+Opt3 >> part3
+> part1
+:Choose option 1.
+> part2
+:Choose option 2.
+> part3
+:Choose option 3.
+%--EndRouteChoose1%

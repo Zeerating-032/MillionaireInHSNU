@@ -1,0 +1,54 @@
+BKG
+	Bkg1
+--BKG
+
+FIGURE
+	L: Liu_31
+	C: Chen_23
+	Ele: Ele
+	BlitSur: BlitSur
+--FIGURE
+
+$bkg.add_pic("Bkg1")
+$L.add_pic("Normal")
+$C.add_pic("Normal")
+
+; 前情提要結束, 介紹需求
+
+$trans.fadeto(255)
+; 轉場預設0.3s
+$L.apply_odr("Circle")
+$L.go((850, 40))
+$C.apply_odr("Circle")
+$C.go((850, 230))
+$Ele.add_pic("Status1")
+$Ele.show()
+$trans.fadeto(0)
+
+L:左邊這張圖的灰底是一張畫布。
+L:黃色原點所在的位置是基準點。
+L:首先，按照記錄的順序，在相對黃點的位置上放上圖片。
+$Ele.put_yellow()
+C:因為黃點並不在角落，所以相對位置是負的也沒關係。
+L:在圖片顯示時，藍色的X表示最右下點，紅色的X是最左上點。
+$Ele.swift()
+; swift裡面的東西晚點加
+C:來多放一點東西吧。
+; 關閉文字框
+$Ele.to_status("Status2")
+:Wait Ele to Status2
+$Ele.to_status("Status3")
+:Wait Ele to Status3
+; 開啟文字框
+L:接下來，把多餘的部分剪掉。
+$Ele.add_pic("Finish")
+$BlitSur.appear_at()
+C:最後，把圖片放到螢幕上就完成了，黃點對齊設定好的顯示位置。
+$Ele.swift()
+
+L:而這樣做有什麼好處呢?
+L.disappear()
+C.disappear()
+L.apply_odr("Normal")
+C.apply_odr("Normal")
+; 之後再打
